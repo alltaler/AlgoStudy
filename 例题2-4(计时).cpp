@@ -22,6 +22,7 @@ int main()
         res = (res + factorial) % MOD;
     }
     printf("%d\n", res);
+    //结果发现n>=22时后末尾6位都为940313，是因为22之后的数的阶乘末6位均为0，故结果r不再变化
     end = clock();
     printf("Time used = %.2f\n", (double)(end - begin) / CLOCKS_PER_SEC);
     return 0;
