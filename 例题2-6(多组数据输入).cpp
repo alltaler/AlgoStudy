@@ -14,12 +14,15 @@
 
     Case 2: -4 10 3.000*/
 #define INF 1000000000
+
+
+
 int main()
 {
     int x, n, kase = 0;
     while(scanf("%d",&n)==1&&n) //  输入
     {
-        int min = INF, max = -INF;
+        int min = INF, max = -INF;  //使用INF初始化存在问题，后续再做讨论
         int sum = 0;
         for (int i = 0;i<n;i++)
         {
